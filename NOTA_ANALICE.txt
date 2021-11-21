@@ -1,0 +1,10 @@
+==============================
+	#FAZENDO:
+ versão do layout add lista do usuário (dá pra adicionar pelo javascript)
+
+
+
+
+
+==============================
+
