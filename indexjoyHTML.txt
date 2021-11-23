@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilojoy.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>BuzzQuizz</title>
+
+</head>
+<body >
+    <main class="tudo">
+            <header class="header">
+                <div class="topo">
+                 <p>BuzzQuizz</p>
+                </div>
+            </header> 
+            <div class="banner-quizz">
+                <div class="banner">
+                   <!--imagens e texto -->
+                </div>    
+            </div>
+        <ul class="pergunta-card">
+               <!-- <li class="pergunta">
+                    <h5>Em qual animal Olho-Tonto Moody transfigurou Malfoy?</h5> 
+                </li>
+               <div class="respostas">
+                    <div class="alternativas">
+                        <div class="resp">
+                            <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
+                            <h5>Gatíneo</h5>
+                        </div>
+                        <div class="resp">
+                            <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
+                            <h5>Gatíneo</h5>
+                        
+                        </div>
+                        <div class="resp">
+                            <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
+                            <h5>Gatíneo</h5>
+                        
+                        
+                        </div>
+                        <div class="resp">
+                           <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
+                            <h5>Gatíneo</h5>
+                        
+                        
+                        </div>
+                    </div>    
+                </div>
+                <li class="pergunta">
+                     <h5>Em qual animal Olho-Tonto Moody transfigurou Malfoy?</h5> 
+                <div class="respostas controle">
+                    <div class="alternativas">
+                        <div class="resp">
+                           <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
+                            <h5>Gatíneo</h5>
+                        </div>
+                        <div class="resp">
+                           <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
+                            <h5>Gatíneo</h5>
+                        
+                        
+                        </div>
+                        <div class="resp">
+                            <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
+                            <h5>Gatíneo</h5>
+                        
+                        
+                        </div>
+                        <div class="resp">
+                            <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
+                            <h5>Gatíneo</h5>
+                        
+                        
+                        </div>
+                    </div>    
+                </div>-->
+            </ul>
+        
+
+           
+
+        
+        
+        <ul class="resultado-card">
+
+                <li class="seu-nivel">
+                 <h5></h5>
+                </li>
+                <div class="nivel1">
+                     <div class="conteudo-nivel">
+                         <img src="" alt="">
+                         <h5></h5>
+                     </div>
+
+                </div>   
+                <div class="rei">
+                   <button class="Reiniciar">Reiniciar Quizz</button>
+                   <button class="voltar">Voltar pra home</button>
+                </div>
+        </ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptjoy.js"></script>
+
+    </main>
+</body>
+</html>
+  
+

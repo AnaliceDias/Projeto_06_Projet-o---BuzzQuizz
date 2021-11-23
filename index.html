@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="estiloTela1_analice.css">
     <link rel="stylesheet" href="estiloTela3_analice.css">
-    <link rel="stylesheet" href="estiloTela2_joy.css">
+    <!--<link rel="stylesheet" href="estiloTela2_joy.css">-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@
     <header>BuzzQuizz</header>
     <!--======================================TELA 1 ======================================-->
      
-         <main class="comQuizzDoUsuario" >
+         <main class="comQuizzDoUsuario tela1" >
 
         <div class="botaoCriarQuizz"  onclick="criarQuizz()" data-identifier="create-quizz">
 
@@ -55,8 +55,8 @@
 
     <!--====================================================================================-->
     
-    <!--======================================TELA 2 ======================================-->
-    <main class="tudo">
+    <!--======================================TELA 2  Essa tela precisa ser testada separadamente ======================================-->
+    <!--<main class="tudo">
         <header class="header">
             <div class="topo">
              <p>BuzzQuizz</p>
@@ -64,73 +64,13 @@
         </header> 
         <div class="banner-quizz">
             <div class="banner">
-               <!--imagens e texto -->
+               //imagens e texto
             </div>    
         </div>
     <ul class="pergunta-card">
-           <!-- <li class="pergunta">
-                <h5>Em qual animal Olho-Tonto Moody transfigurou Malfoy?</h5> 
-            </li>
-           <div class="respostas">
-                <div class="alternativas">
-                    <div class="resp">
-                        <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
-                        <h5>Gatíneo</h5>
-                    </div>
-                    <div class="resp">
-                        <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
-                        <h5>Gatíneo</h5>
-                    
-                    </div>
-                    <div class="resp">
-                        <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
-                        <h5>Gatíneo</h5>
-                    
-                    
-                    </div>
-                    <div class="resp">
-                       <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
-                        <h5>Gatíneo</h5>
-                    
-                    
-                    </div>
-                </div>    
-            </div>
-            <li class="pergunta">
-                 <h5>Em qual animal Olho-Tonto Moody transfigurou Malfoy?</h5> 
-            <div class="respostas controle">
-                <div class="alternativas">
-                    <div class="resp">
-                       <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
-                        <h5>Gatíneo</h5>
-                    </div>
-                    <div class="resp">
-                       <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
-                        <h5>Gatíneo</h5>
-                    
-                    
-                    </div>
-                    <div class="resp">
-                        <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
-                        <h5>Gatíneo</h5>
-                    
-                    
-                    </div>
-                    <div class="resp">
-                        <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
-                        <h5>Gatíneo</h5>
-                    
-                    
-                    </div>
-                </div>    
-            </div>-->
+          
         </ul>
-    
-
-       
-
-    
-    
+        
     <ul class="resultado-card">
 
             <li class="seu-nivel">
@@ -149,7 +89,7 @@
             </div>
     </ul>
 
-</main>
+</main> -->
     <!--====================================================================================-->
 
     <!--======================================TELA 3 ======================================-->
@@ -260,7 +200,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="scriptanalice.js"></script>
-    <script src="scriptjoy.js"></script>
+    <!--<script src="scriptjoy.js"></script>-->
 
 </body>
 </html>
