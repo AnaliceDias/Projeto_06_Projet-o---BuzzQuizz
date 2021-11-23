@@ -1,10 +1,24 @@
+Tarefa da terça: Só juntar os códigos.
+add atributos que facilitam correção
+
+
 ==============================
 	#FAZENDO:
- versão do layout add lista do usuário (dá pra adicionar pelo javascript)
+layout tela 3 (ion-icon das demais perguntas)
 
 
-
-
+	#PRÓXIMO
+Verifica a classe do main tela 1 (com ou sem quizz do usuário)
+	Se o storage estiver vazio, deixar classe sem quizz do usuario. (se já tiver, permanece. Se for diferente, troca)
+	Se não estiver vazio e um de seus valores for correspondente aos índices dos quizzes no servidor (rodar um for para armazenar os índices num array), deixar classe com quizz do usuario
 
 ==============================
+ideias
+
+ir guardando o id dos quizzes do em um array, depois ir atualizando o localStorage com [usuário, array];
+depois ussar o array deserializado para comparar os valores com os id vindos na requisição do servidor.
+os quizzes cujo ids forem iguais aos ids presentes na requisição, devem ser exibidos na lista do usuário.
+
+Pedidos de Joyce:
+Coletar id do quizz (ou algo que possa identificar o quizz) aoclicar nele.
 

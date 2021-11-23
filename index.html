@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estiloTela1_analice.css">
+    <link rel="stylesheet" href="estiloTela3_analice.css">
+    <link rel="stylesheet" href="estiloTela2_joy.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>BuzzQuizz</title>
+
+</head>
+
+<body>
+
+    <header>BuzzQuizz</header>
+    <!--======================================TELA 1 ======================================-->
+     
+         <main class="comQuizzDoUsuario" >
+
+        <div class="botaoCriarQuizz"  onclick="criarQuizz()" data-identifier="create-quizz">
+
+            <!--<h2>Você não criou nenhum quizz ainda :(</h2>
+            <button>Criar Quizz</button>-->
+            <button><ion-icon name="add-circle"></ion-icon></button>
+
+        </div>
+
+        <div class="listaQuizzesDoUsuario" data-identifier="user-quizzes">
+
+            <div class="titulo"><h2>Seus Quizzes</h2></div>
+            <div class="quizzesUsuario">
+                <!--A lista de quizzes entra aqui-->
+            </div>
+        </div>
+
+
+        <div class="listaDeQuizzes" data-identifier="general-quizzes">
+
+            <div class="titulo"><h2>Todos os Quizzes</h2></div>
+            <div class="quizzes">
+                <!--A lista de quizzes entra aqui-->
+            </div>
+        </div>
+
+    </main>
+
+    <!--====================================================================================-->
+    
+    <!--======================================TELA 2 ======================================-->
+    <main class="tudo">
+        <header class="header">
+            <div class="topo">
+             <p>BuzzQuizz</p>
+            </div>
+        </header> 
+        <div class="banner-quizz">
+            <div class="banner">
+               <!--imagens e texto -->
+            </div>    
+        </div>
+    <ul class="pergunta-card">
+           <!-- <li class="pergunta">
+                <h5>Em qual animal Olho-Tonto Moody transfigurou Malfoy?</h5> 
+            </li>
+           <div class="respostas">
+                <div class="alternativas">
+                    <div class="resp">
+                        <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
+                        <h5>Gatíneo</h5>
+                    </div>
+                    <div class="resp">
+                        <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
+                        <h5>Gatíneo</h5>
+                    
+                    </div>
+                    <div class="resp">
+                        <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
+                        <h5>Gatíneo</h5>
+                    
+                    
+                    </div>
+                    <div class="resp">
+                       <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
+                        <h5>Gatíneo</h5>
+                    
+                    
+                    </div>
+                </div>    
+            </div>
+            <li class="pergunta">
+                 <h5>Em qual animal Olho-Tonto Moody transfigurou Malfoy?</h5> 
+            <div class="respostas controle">
+                <div class="alternativas">
+                    <div class="resp">
+                       <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
+                        <h5>Gatíneo</h5>
+                    </div>
+                    <div class="resp">
+                       <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
+                        <h5>Gatíneo</h5>
+                    
+                    
+                    </div>
+                    <div class="resp">
+                        <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
+                        <h5>Gatíneo</h5>
+                    
+                    
+                    </div>
+                    <div class="resp">
+                        <img src="https://s3-alpha-sig.figma.com/img/7212/aa92/e0229a2cb5aea15ab3fd2b5d36cb9a60?Expires=1638144000&amp;Signature=E-djO4UvnSNyGrh4porzOF3~ateDCWBO7F03TgYzJFjSa02ZWO-YximHyOVzp2mV87abw44lrUzQjKrJ44Acd-S2xSfkrtbDvTQN3-QiLDB-fJH8ml48RD6RD-X7V9oKUBg7NFaZzmq~V3ra~iewSHFKNFS9d5KUwQanKvcqYIYKgmkEaePHMifpKIJ3FSjXHeV1JTP7VLnuFKIM5qbwhCJVlYJsv29HmJDft6BpbXsss0atSrtN2VdLkr4vnnbeGl9luFqV0MtM3djI5FjBhy3FUGrNvU2MPEUVEfChpLh1zcER1JBAsXC8iW3fELbPU0WwN2P9A1l5Ob5fSenSIA__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA" ,="" alt="">
+                        <h5>Gatíneo</h5>
+                    
+                    
+                    </div>
+                </div>    
+            </div>-->
+        </ul>
+    
+
+       
+
+    
+    
+    <ul class="resultado-card">
+
+            <li class="seu-nivel">
+             <h5></h5>
+            </li>
+            <div class="nivel1">
+                 <div class="conteudo-nivel">
+                     <img src="" alt="">
+                     <h5></h5>
+                 </div>
+
+            </div>   
+            <div class="rei">
+               <button class="Reiniciar">Reiniciar Quizz</button>
+               <button class="voltar">Voltar pra home</button>
+            </div>
+    </ul>
+
+</main>
+    <!--====================================================================================-->
+
+    <!--======================================TELA 3 ======================================-->
+        <!--======================================TELA 3.1 ======================================-->
+    
+        <main class="tela3_1 esconder">
+
+            <h2>Comece pelo começo</h2>
+
+            <section>
+
+                <input type="titulo" placeholder="Título do seu quizz" class="titulo_quizz">
+                <input type="imagem" placeholder="URL da imagem do seu quizz" class="URLdaImagem">
+                <input type="quantidadePerguntas" placeholder="Quantidade de perguntas do quizz" class="QuantidadePerguntas">
+                <input type="quantidadeNiveis" placeholder="Quantidade de níveis do quizz" class="QuantidadeNiveis">
+            </section>
+
+            <button onclick="chamarTela3_2()">Prosseguir pra criar perguntas</button>
+
+        </main>
+    
+        <!--======================================TELA 3.2 ======================================-->
+        <main class="tela3_2 esconder">
+
+            <h2>Crie suas perguntas</h2>
+
+            <section>
+
+                <h2>Pergunta 1</h2>
+                <input type="enunciado" placeholder="Texto da pergunta" data-identifier="question">
+                <input type="corDeFundo" placeholder="Cor de fundo da pergunta">
+
+                <h2>Resposta correta</h2>
+                <input type="respostaCorreta" placeholder="Resposta correta">
+                <input type="imagem" placeholder="URL da imagem">
+
+                <h2>Respostas incorretas</h2>
+                <input type="respostaIncorreta_1" placeholder="Resposta incorreta 1">
+                <input type="imagem" placeholder="URL da imagem 1">
+
+                <input type="respostaIncorreta_2" placeholder="Resposta incorreta 2">
+                <input type="imagem" placeholder="URL da imagem 2">
+
+                <input type="respostaIncorreta_3" placeholder="Resposta incorreta 3">
+                <input type="imagem" placeholder="URL da imagem 3">
+                
+            </section>
+
+            <section>
+
+                <h2>Pergunta 2</h2>
+                <button onclick="esconder2(this)"><ion-icon name="caret-down-outline"></ion-icon></button>
+
+                <div class="criarMaisPerguntas2 criarMaisPerguntasEstilo esconder">
+                    
+                    <input type="enunciado" placeholder="Texto da pergunta" data-identifier="question">
+                    <input type="corDeFundo" placeholder="Cor de fundo da pergunta">
+
+                    <h2>Resposta correta</h2>
+                    <input type="respostaCorreta" placeholder="Resposta correta">
+                    <input type="imagem" placeholder="URL da imagem">
+
+                    <h2>Respostas incorretas</h2>
+                    <input type="respostaIncorreta_1" placeholder="Resposta incorreta 1">
+                    <input type="imagem" placeholder="URL da imagem 1">
+
+                    <input type="respostaIncorreta_2" placeholder="Resposta incorreta 2">
+                    <input type="imagem" placeholder="URL da imagem 2">
+
+                    <input type="respostaIncorreta_3" placeholder="Resposta incorreta 3">
+                    <input type="imagem" placeholder="URL da imagem 3">
+                </div>
+                            
+            </section>
+
+            <section>
+
+                <h2>Pergunta 3</h2>
+                <button onclick="esconder3(this)"><ion-icon name="caret-down-outline"></ion-icon></button>
+
+                <div class="criarMaisPerguntas3 criarMaisPerguntasEstilo esconder">
+                    
+                    <input type="enunciado" placeholder="Texto da pergunta" data-identifier="question">
+                    <input type="corDeFundo" placeholder="Cor de fundo da pergunta">
+
+                    <h2>Resposta correta</h2>
+                    <input type="respostaCorreta" placeholder="Resposta correta">
+                    <input type="imagem" placeholder="URL da imagem">
+
+                    <h2>Respostas incorretas</h2>
+                    <input type="respostaIncorreta_1" placeholder="Resposta incorreta 1">
+                    <input type="imagem" placeholder="URL da imagem 1">
+
+                    <input type="respostaIncorreta_2" placeholder="Resposta incorreta 2">
+                    <input type="imagem" placeholder="URL da imagem 2">
+
+                    <input type="respostaIncorreta_3" placeholder="Resposta incorreta 3">
+                    <input type="imagem" placeholder="URL da imagem 3">
+                </div>
+                            
+            </section>
+
+            <button >Prosseguir pra criar níveis</button>
+
+        </main>
+    <!--====================================================================================-->
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="scriptanalice.js"></script>
+    <script src="scriptjoy.js"></script>
+
+</body>
+</html>

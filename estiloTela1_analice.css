@@ -2,10 +2,11 @@ body {
     position: relative;
     width: 100%;
 
+    
+
     background-color: #FAFAFA;
 
     font-family: 'Roboto', sans-serif;
-
 }
 
 header {
@@ -15,7 +16,7 @@ header {
     position: absolute;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 3;
 
     width: 100%;
     height: 69px;
@@ -32,7 +33,7 @@ header {
 
 /*==========DESKTOP==========*/
 
-main {
+main.tela1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -42,6 +43,10 @@ main {
 
     margin-top: 69px;
     margin-bottom: 20px;
+}
+
+main.esconder {
+    display: none;
 }
 
 main.semQuizzDoUsuario div.botaoCriarQuizz {
@@ -120,7 +125,7 @@ main.comQuizzDoUsuario div.botaoCriarQuizz h2{
     display: none;
 }
 
-main.comQuizzDoUsuario div.botaoCriarQuizz button { /*Implementar no JS que qnd o main está com essa classe o botão recebe inerhtml do <ion-icon name="add-outline"></ion-icon> e imagem*/
+main.comQuizzDoUsuario div.botaoCriarQuizz button { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,7 +154,7 @@ div.listaDeQuizzes {
     align-items: center;
                 
     width: 100%;
-    height: 1000px;
+    
 }
 
 div.listaDeQuizzes div.titulo{
@@ -191,6 +196,8 @@ div.listaDeQuizzes div.quizzes article {
     align-items: center;
     position: relative;
 
+    overflow: hidden;
+
     width: 340px;
     height: 181px;
 
@@ -205,13 +212,14 @@ div.listaDeQuizzes div.quizzes article img {
     height: 181px;
 
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 64.58%, #000000 100%), url(.png);
-    border-radius: 5px;
+    border-radius: 5px;    
 }
 
 div.listaDeQuizzes div.quizzes article h2{
     position: absolute;
     left: 12px;
     bottom: 2px;
+    z-index: 0;
 
     width: 301px;
     height: 54px;
@@ -221,14 +229,104 @@ div.listaDeQuizzes div.quizzes article h2{
     font-size: 19px;
     line-height: 22px;
     color: #FFFFFF;
+
+   
 }
+
+    /*======LISTA DO USUARIO======*/
+    div.listaQuizzesDoUsuario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+                    
+        width: 100%;
+    }
+    
+    div.listaQuizzesDoUsuario div.titulo{
+        display: flex;
+        justify-content: left;
+    
+        margin-top: 36px;
+    
+        width: 100%;
+    }
+    
+    
+    div.listaQuizzesDoUsuario div h2 {
+            
+        width: auto;
+    
+        margin-left: 18px;
+    
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        color: #000000;
+    }
+    
+    div.listaQuizzesDoUsuario div.quizzesUsuario {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    
+    div.listaQuizzesDoUsuario div.quizzesUsuario article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    
+        overflow: hidden;
+    
+        width: 340px;
+        height: 181px;
+    
+        margin-top: 14px;
+        margin-left: 7px;
+        margin-right: 7px;
+           
+    }
+    
+    div.listaQuizzesDoUsuario div.quizzesUsuario article img {
+        width: 340px;
+        height: 181px;
+    
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 64.58%, #000000 100%), url(.png);
+        border-radius: 5px;    
+    }
+    
+    div.listaQuizzesDoUsuario div.quizzesUsuario article h2{
+        position: absolute;
+        left: 12px;
+        bottom: 2px;
+        z-index: 0;
+    
+        width: 301px;
+        height: 54px;
+    
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 22px;
+        color: #FFFFFF;
+    
+       
+    }
+    /*===========================*/
+
+/*===========================*/
 
 
 /*==========MOBILE==========*/
 
 @media (max-width: 1100px) {
 
-    main {
+    main.tela1 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -238,6 +336,10 @@ div.listaDeQuizzes div.quizzes article h2{
 
         margin-top: 69px;
         margin-bottom: 20px;
+    }
+
+    main.esconder {
+        display: none;
     }
 
     main.semQuizzDoUsuario div.botaoCriarQuizz {
@@ -424,8 +526,89 @@ div.listaDeQuizzes div.quizzes article h2{
         line-height: 22px;
         text-align: center;
         color: #FFFFFF;
-
-        
-
     }
+
+        /*======LISTA DO USUARIO======*/
+        div.listaQuizzesDoUsuario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-self: center;
+                    
+            width: 100%;
+            height: auto;
+        }
+    
+        div.listaQuizzesDoUsuario div.titulo{
+            display: flex;
+            justify-content: left;
+    
+            margin-top: 36px;
+    
+            width: 100%;
+        }
+    
+        div.listaQuizzesDoUsuario div.titulo h2 {  
+            width: auto;
+    
+            margin-left: 18px;
+    
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            color: #000000;  
+        }
+       
+        div.listaQuizzesDoUsuario div.quizzesUsuario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            width: 100%;
+            height: auto;
+        }
+    
+        div.listaQuizzesDoUsuario div.quizzesUsuario article {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+             
+            width: 100%;
+            height: auto;
+    
+            margin-top: 14px;
+        }
+    
+        div.listaQuizzesDoUsuario div.quizzesUsuario article img {      
+            width: 340px;
+            height: 181px;
+    
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 64.58%, #000000 100%), url(.png);
+            border-radius: 5px;        
+        }
+    
+        div.listaQuizzesDoUsuario div.quizzesUsuario article h2{
+            position: absolute;
+            top: 105px;
+            left: -0.01px;
+            z-index: 2;
+    
+            width: 301px;
+            height: 54px;
+    
+            font-style: normal;
+            font-weight: normal;
+            font-size: 19px;
+            line-height: 22px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        /*===========================*/
 }
+/*===========================*/
